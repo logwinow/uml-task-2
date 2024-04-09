@@ -27,6 +27,7 @@ State Processing {
 @enduml
 
 Sequence
+![Sequence](Sequence.png)
 @startuml
 actor User
 participant "Unity Renderer" as Renderer
