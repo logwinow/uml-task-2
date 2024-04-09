@@ -93,3 +93,45 @@ User --> reflection
 ripple --> complete
 reflection --> complete
 @enduml
+
+
+
+Код на языке C#
+public class WaterShader
+{
+    public void ApplyRippleEffect()
+    {
+        // Реализация метода
+    }
+
+    public void ApplyReflectionEffect()
+    {
+        // Реализация метода
+    }
+
+    public void InitializeShader()
+    {
+        // Реализация метода
+    }
+}
+
+public class UnityRenderer
+{
+    public void StartWaterEffect()
+    {
+        // Реализация метода
+    }
+
+    public void WaterEffectCompleted()
+    {
+        // Реализация метода
+    }
+}
+
+public class User
+{
+    public void Interact()
+    {
+        // Реализация метода
+    }
+}
