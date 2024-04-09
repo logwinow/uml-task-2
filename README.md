@@ -98,7 +98,7 @@ reflection --> complete
 
 Код на языке C#
 Процесс
-![Process](process.png)
+![Process](process.jpg)
 public class WaterShader
 {
     public void ApplyRippleEffect()
