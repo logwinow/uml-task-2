@@ -56,3 +56,40 @@ Renderer -> User: WaterEffectCompleted()
 deactivate Renderer
 @enduml
 
+Class
+![Class](Class.png)
+@startuml
+class WaterShader {
+  +ApplyRippleEffect()
+  +ApplyReflectionEffect()
+  +InitializeShader()
+}
+class UnityRenderer {
+  +StartWaterEffect()
+  +WaterEffectCompleted()
+}
+class User {
+  +Interact()
+}
+WaterShader ..> UnityRenderer : Uses
+UnityRenderer ..> User : Uses
+@enduml
+
+Use-case
+![Use-case](Usecase.png)
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor User
+rectangle Unity {
+usecase "Start Water Effect" as start
+usecase "Apply Ripple Effect" as ripple
+usecase "Apply Reflection Effect" as reflection
+usecase "Complete Water Effect" as complete
+}
+User -- start
+User --> ripple
+User --> reflection
+ripple --> complete
+reflection --> complete
+@enduml
