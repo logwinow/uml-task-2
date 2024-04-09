@@ -1,5 +1,7 @@
 State
-![State](State diagram.png)
+
+[State](State diagram.png)
+
 @startuml
 [*] --> Start
 
